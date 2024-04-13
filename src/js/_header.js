@@ -1,12 +1,3 @@
-// const input1 = document.querySelector('#id_form_type_0')
-// const input2 = document.querySelector('#id_form_type_1')
-
-// const label1 = input1.closest('label')
-// const label2 = input2.closest('label')
-
-// label1.insertAdjacentElement('beforeBegin', input1);
-// label2.insertAdjacentElement('beforeBegin', input2);
-
 const modalBtn = document.querySelector('.header-modalbtn');
 const modal = document.querySelector('#modal');
 const modalClose = document.querySelector('.modal-close');
@@ -49,25 +40,6 @@ window.onclick = (e) => {
 
     bodyOverflowHidden(hidden, auto);
 };
-
-// const textareaInModal = document.querySelector('#id_description');
-// textareaInModal.placeholder = 'Текст';
-
-// const attachFile = document.querySelector('.feedback-requestSection__attach label');
-// const inputFile = document.querySelector('#id_file');
-
-// attachFile.addEventListener('dragenter', (event) => {
-//     event.preventDefault();
-// });
-// attachFile.addEventListener('dragover', (event) => {
-//     event.preventDefault();
-// });
-
-// attachFile.addEventListener('drop', (event) => {
-//     event.preventDefault();
-//     let draggedData = event.dataTransfer;
-//     let files = draggedData.files;
-// });
 
 const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
