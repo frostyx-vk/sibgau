@@ -1,8 +1,5 @@
-{% load static %}
-
 <div>
     <form method="post" action="{% url 'web:feedback' %}" id="feedbackForm" enctype="multipart/form-data">
-        {% csrf_token %}
         <div style="height: 0; overflow: hidden;">
             {{ feedback_form.page }}
             {{ feedback_form.fax }}
@@ -53,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div id="requestSection" hidden>
+            <!-- <div id="requestSection" hidden>
                 <div class="messages"></div>
                 <div class="feedback-requestSection__contacts">
                     <label for="{{ feedback_form.project_type.id_for_label }}">Укажите тип проекта</label>
@@ -112,7 +109,7 @@
                         <a href="agreement/">согласие на обработку персональных данных</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div id="feedbackApplicationSent">
                 <h3>Заявка отправлена!</h3>
             </div>

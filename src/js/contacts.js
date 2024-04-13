@@ -1,18 +1,17 @@
-if (window.location.pathname === '/contacts/') {
+if (window.location.pathname === '/src/templates/contacts.html') {
   const wrapper = document.querySelector('.content-wrapper');
   wrapper.style.overflow = 'hidden';
 };
 
 const contactRequisition = document.querySelector('#contactRequisition');
 const contactRequisitionH2 = document.querySelector('#contactRequisitionH2');
-const btnAdaptForModal = document.querySelector('.content-trust__button-svg-adapt')
+const modalA = document.querySelector('#modal');
 
 function openModal (btn) {
   btn.onclick = () => {
-      modal.style.display = 'block';
+    modalA.style.display = 'block';
       document.querySelector('body').style.overflow = 'hidden';
   };
 };
 openModal(contactRequisition);
 openModal(contactRequisitionH2);
-openModal(btnAdaptForModal);
