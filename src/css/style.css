@@ -2086,6 +2086,10 @@ p {
     overflow: hidden;
 }
 
+.content-trust__button-svg-adapt {
+    display: none;
+}
+
 @media (max-width: 1280px) {
     .burger {
         display: flex;
@@ -2095,6 +2099,15 @@ p {
 @media (max-width: 768px) {
     .burger-menu .content-trust__button-svg {
         display: flex !important;
+    }
+}
+@media (max-width: 600px) {
+    .content-trust__button-svg {
+        display: none;
+    }
+
+    .content-trust__button-svg-adapt {
+        display: block;
     }
 }
 
