@@ -908,6 +908,14 @@ p {
         align-items: center;
     }
 
+    .content-solution__animation-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .content-solution__animation-img{
+        display: none;
+    }
+
     .content-company {
         gap: 20px;
         flex-direction: column-reverse;
@@ -946,6 +954,10 @@ p {
 
     .flatpage-content p {
         padding: 0 10px;
+    }
+    .content-statistics {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1034,16 +1046,17 @@ p {
         text-align: center;
     }
 
-    .content-company {
-        margin-top: -100px;
-    }
-
     .content-trust {
         margin-top: 120px;
     }
 
     .flatpage-header h1 {
         font-size: 40px;
+    }
+
+    .content-review__block {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1056,6 +1069,10 @@ p {
 
     .content-trust__button {
         z-index: 9;
+    }
+    
+    .mySlides img {
+        width: 100%;
     }
 }
 
