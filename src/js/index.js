@@ -131,9 +131,41 @@ document.addEventListener('DOMContentLoaded', () => {
     callMeFooterBtn.onclick = () => {
         modal.style.display = 'block';
         document.querySelector('body').style.overflow = 'hidden';
-    }
+    };
     leaveRequest.onclick = () => {
         modal.style.display = 'block';
         document.querySelector('body').style.overflow = 'hidden';
-    }
+    };
+
+    const btnChangeTheme = document.querySelector('.header__contacts-btn');
+
+    const animationBlock = document.querySelector('.content-solution__animation-wave');
+    const videoBlock = document.querySelector('.content-solution__left-block');
+
+    function lightMode() {
+        const body = document.body;
+        const wasLightMode = localStorage.getItem('light-mode') === 'true';
+
+        localStorage.setItem('light-mode', !wasLightMode);
+        body.classList.toggle('light-mode', !wasLightMode);
+
+        if (document.body.classList.contains('light-mode')) {
+            animationBlock.style.display = 'none';
+            videoBlock.style.display = 'none';
+        } else {
+            animationBlock.style.display = 'block';
+            videoBlock.style.display = 'block';
+        }
+    };
+    btnChangeTheme.addEventListener('click', lightMode);
+
+    function onload() {
+        document.body.classList.toggle('light-mode', localStorage.getItem('light-mode') === 'true');
+        if (document.body.classList.contains('light-mode')) {
+            animationBlock.style.display = 'none';
+            videoBlock.style.display = 'none';
+        }
+    };
+    onload();
+
 });
