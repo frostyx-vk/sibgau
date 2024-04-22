@@ -983,10 +983,13 @@ p {
     .content-company {
         padding: 0 10px;
     }
-
-    .content-statistics .content-statistics__left {
-        margin-right: 40px;
+    .content-trust__button-shadowleft, .content-trust__button-shadowright {
+        display: none;
     }
+
+    /* .content-statistics .content-statistics__left {
+        margin-right: 40px;
+    } */
 
     .content-solution__right-block,
     .content-review {
@@ -1376,6 +1379,21 @@ p {
 
     .modal-content form {
         padding: 20px;
+    }
+    .content-statistics__left, .content-statistics__middle, .content-statistics__right {
+        background: none;
+    }
+    .middle {
+        position: static;
+    }
+    .content-trust__title-desc {
+        font-size: 24px;
+    }
+    .content-trust, .content-relation {
+        padding: 0 10px;
+    }
+    .content-trust__button-block, .content-statistics__left, .content-statistics__right {
+        width: auto;
     }
 }
 
